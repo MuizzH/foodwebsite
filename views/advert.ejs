@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+
+<head>
+    <title>Promotion lists</title>
+</head>
+
+
+
+<div class="container" >
+    <h1 style="text-align: center;"> Add new promotion here! </h1>
+
+        <form action="/advert" method="POST" class="container">
+            <div class="form-group">
+            <label for="resname">Restaurant Name</label>
+            <input type="text" name="name" class="form-control" placeholder="Insert name" width="100">
+            </div>
+            <div class="form-group">
+                <label for="order">Minimiun Order</label>
+                <input type="text" name="order" class="form-control" placeholder="Price Range eg $15.00">
+            </div>
+            <div class="form-group">
+                <label for="fee">Delivery Fee</label>
+                <input type="text" name="delifee" class="form-control" placeholder="Price Range eg $15.00">
+            </div>
+            <div class="form-group">
+                <label for="locti">Location</label>
+                <input type="text" name="location" class="form-control" placeholder="District">
+            </div>
+           <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<br>
+
+<%- include('partials/footer') %> 

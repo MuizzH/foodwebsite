@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Game Page</title>
+    </head>
+    <body>
+        <h2>Game Title: <%= title %></h2>
+        <h3>Game Creator: <%= creator %></h3>
+        <!-- Only add the = when you want to display the value of a variable in ejs -->
+        <!-- Our If Statement -->
+        <% if(title == "Fortnite"){ %> 
+            <p>Description: Fortnite Battle Royale is the FREE 100-player PvP mode in Fortnite. One giant map. A battle bus. Fortnite building skills and destructible environments combined ...</p>
+        <% }else{ %>
+            <p>There is no description for this game. Try Fortnite.</p>
+        <% } %>
+    </body> 
+</html>
